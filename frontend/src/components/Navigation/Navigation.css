@@ -1,0 +1,18 @@
+.MuiContainer-root {
+	background-color: white;
+}
+.left-box {
+	flex-grow: 1;
+	display: flex;
+	cursor: pointer;
+}
+.right-box {
+	flex-grow: 0;
+	display: flex;
+}
+.page-title {
+	text-align: center;
+}
+.page-button-text {
+	color: #1b2032;
+}

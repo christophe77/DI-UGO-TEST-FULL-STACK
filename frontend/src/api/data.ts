@@ -1,0 +1,88 @@
+import { Customer } from '../types/customer';
+import { Order } from '../types/order';
+
+export const fakeCustomers: Customer[] = [
+	{
+		customerId: 555,
+		title: 1,
+		lastname: '',
+		firstname: '',
+		postalCode: '',
+		city: '',
+		email: '',
+	},
+	{
+		customerId: 521,
+		title: 2,
+		lastname: 'aaa',
+		firstname: 'bbb',
+		postalCode: '75000',
+		city: 'Paris',
+		email: 'aaa@aaa.com',
+	},
+	{
+		customerId: 35,
+		title: 1,
+		lastname: 'ccc',
+		firstname: 'ddd',
+		postalCode: '93000',
+		city: 'Saint Denis',
+		email: 'ccc@ccc.com',
+	},
+];
+export const fakeOrders: Order[] = [
+	{
+		purchaseIdentifier: '555-555',
+		customerId: 555,
+		productId: 222,
+		quantity: 5,
+		price: 2,
+		currency: 'eur',
+		date: '2024-05-02',
+	},
+	{
+		purchaseIdentifier: '555-556',
+		customerId: 444,
+		productId: 223,
+		quantity: 8,
+		price: 5,
+		currency: 'eur',
+		date: '2024-05-04',
+	},
+    {
+		purchaseIdentifier: '555-555',
+		customerId: 521,
+		productId: 222,
+		quantity: 5,
+		price: 2,
+		currency: 'eur',
+		date: '2024-05-02',
+	},
+	{
+		purchaseIdentifier: '555-556',
+		customerId: 521,
+		productId: 223,
+		quantity: 8,
+		price: 5,
+		currency: 'eur',
+		date: '2024-05-04',
+	},
+    {
+		purchaseIdentifier: '555-555',
+		customerId: 35,
+		productId: 222,
+		quantity: 5,
+		price: 2,
+		currency: 'eur',
+		date: '2024-05-02',
+	},
+	{
+		purchaseIdentifier: '555-556',
+		customerId: 35,
+		productId: 223,
+		quantity: 8,
+		price: 5,
+		currency: 'eur',
+		date: '2024-05-04',
+	},
+];
