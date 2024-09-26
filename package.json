@@ -11,9 +11,10 @@
 		"install:full": "npm run install:back && npm run install:front",
 		"test:front": "cd frontend && npm run test",
 		"test:back": "cd backend && php bin/phpunit",
+		"test:full": "concurrently \"npm run test:back\" \"npm run test:front\"",
 		"start:front": "cd frontend && npm run dev",
 		"start:back": "cd backend && symfony server:start",
-		"start": "concurrently \"npm run start:back\" \"npm run start:front\""
+		"start:full": "concurrently \"npm run start:back\" \"npm run start:front\""
 	},
 	"dependencies": {
 		"concurrently": "^9.0.1"
