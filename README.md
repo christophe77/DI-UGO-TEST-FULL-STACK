@@ -1,28 +1,55 @@
 # Commands
-Before using any of the commands below you need to run 
+Before using any of the commands below you need to run \
+    ```
     npm install
-on the root directory ./
+    ``` \
+on the root directory.
 
 ## Install
-Install front :
+Install front :\
+    ```
     npm run install:front
-Install back :
+    ```
+    
+Install back :\
+    ```
     npm run install:back
-Full install :
+    ```
+    
+Full install :\
+    ```
     npm run install:full
+    ```
 
 ## Start
-Start front :
+Start front :\
+    ```
     npm run start:front
-Start back :
+    ```
+    
+Start back :\
+    ```
     npm run start:back
-Full start :
+    ```
+    
+Full start :\
+    ```
     npm run start:full
+    ```
 
 ## Test
-Test front :
+Test front :\
+    ```
     npm run test:front
-Test back :
+    ```
+    
+Test back :\
+    ```
     npm run test:back
-Full test :
+    ```
+    
+Full test :\
+    ```
     npm run test:full
+    ```
+    
