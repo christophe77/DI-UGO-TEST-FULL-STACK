@@ -1,0 +1,25 @@
+{
+	"name": "DI-UGO-TEST-FULL-STACK",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/christophe77/DI-UGO-TEST-FULL-STACK",
+	"author": "christophe77 <chrisb@gmx.fr>",
+	"license": "MIT",
+	"scripts": {
+		"install:front": "cd frontend && npm install",
+		"install:back": "cd backend && composer install && php bin/console ugo:orders:import",
+		"install:full": "npm run install:back && npm run install:front",
+		"test:front": "cd frontend && npm run test",
+		"test:back": "cd backend && php bin/phpunit",
+		"start:front": "cd frontend && npm run dev",
+		"start:back": "cd backend && symfony server:start",
+		"start": "concurrently \"npm run start:back\" \"npm run start:front\""
+	},
+	"dependencies": {
+		"concurrently": "^9.0.1"
+	},
+	"devDependencies": {
+		"@testing-library/dom": "^10.4.0",
+		"@testing-library/react": "^16.0.1"
+	}
+}

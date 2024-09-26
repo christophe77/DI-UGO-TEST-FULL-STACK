@@ -1,11 +1,11 @@
-import { Suspense, useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getCustomers } from './api/customer';
-import Layout from './components/Layout/Layout';
-import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 import { routes } from './routes';
 import { setCustomers, setCustomerStateIsLoading } from './store/reducers/customerReducer';
+import Layout from './components/Layout/Layout';
+import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 import { Customer } from './types/customer';
 import './App.css';
 
